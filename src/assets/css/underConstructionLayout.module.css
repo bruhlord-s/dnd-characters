@@ -1,0 +1,17 @@
+.underConstructionLayout {
+  display: flex;
+  flex-direction: column;
+}
+
+.underConstructionLayout__warning {
+  background-color: var(--warning-color);
+
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fs-normal);
+  color: var(--bg-color);
+}
