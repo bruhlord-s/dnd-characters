@@ -1,11 +1,7 @@
 .homePage {
   display: flex;
   flex-direction: column;
-}
+  align-items: center;
 
-.homePage__title {
-  font-weight: var(--fw-normal);
-  font-size: var(--fs-large);
-
-  color: var(--text-color);
+  gap: 24px;
 }

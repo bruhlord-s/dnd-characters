@@ -3,8 +3,7 @@ import ReactDOM from "react-dom/client"
 import { RouterProvider } from "react-router-dom"
 import { RecoilRoot } from "recoil"
 import router from "./routes/router"
-import UnderConstructionLayout from "./layouts/UnderConstruction"
-import BaseLayout from "./layouts/Base"
+import BaseLayout from "./layouts/BaseLayout"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 
@@ -12,9 +11,7 @@ root.render(
   <React.StrictMode>
     <RecoilRoot>
       <BaseLayout>
-        <UnderConstructionLayout>
-          <RouterProvider router={router} />
-        </UnderConstructionLayout>
+        <RouterProvider router={router} />
       </BaseLayout>
     </RecoilRoot>
   </React.StrictMode>
