@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Vollkorn+SC:wght@400;600;700;900&display=swap");
 
 * {
   padding: 0;
@@ -13,9 +13,18 @@ body {
 :root {
   --bg-color: #363636;
   --warning-color: #ffb904;
+  --text-color: #ffffff;
 
   --fs-normal: 16px;
+  --fs-large: 24px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
 
   --font-default: "Roboto", sans-serif;
-  --font-antiqua: "Inknut Antiqua", serif;
+  --font-serif: "Vollkorn SC", serif;
+}
+
+h1 {
+  font-family: var(--font-serif);
 }

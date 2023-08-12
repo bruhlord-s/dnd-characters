@@ -15,3 +15,7 @@
   font-size: var(--fs-normal);
   color: var(--bg-color);
 }
+
+.underConstructionLayout__content {
+  padding: 48px;
+}

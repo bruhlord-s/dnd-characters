@@ -1,0 +1,11 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage__title {
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-large);
+
+  color: var(--text-color);
+}
