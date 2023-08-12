@@ -1,0 +1,23 @@
+.characterCard {
+  border: 1px solid var(--text-color);
+  border-radius: var(--border-radius);
+
+  padding: 8px 16px;
+
+  font-size: var(--fs-small);
+
+  height: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.characterCard__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.characterCard__name {
+  font-weight: 700;
+}

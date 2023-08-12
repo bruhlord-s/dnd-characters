@@ -7,5 +7,6 @@ export const characterState = atom({
     name: "",
     race: "",
     class: "",
+    level: 1,
   } as Character,
 })

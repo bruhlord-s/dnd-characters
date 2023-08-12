@@ -1,0 +1,16 @@
+.userCharacters {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+.userCharacters__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  overflow-y: scroll;
+}

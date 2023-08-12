@@ -11,12 +11,16 @@
   --text-color: #ffffff;
 
   --fs-large: 18px;
+  --fs-small: 12px;
 
   --primary-gradient: linear-gradient(135deg, #5937e1 0%, #7725c9 100%);
+
+  --border-radius: 8px;
 }
 
 body {
   font-family: "Vollkorn SC", serif;
+  color: var(--text-color);
 }
 
 h1 {
