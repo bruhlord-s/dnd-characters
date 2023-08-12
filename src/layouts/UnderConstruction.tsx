@@ -1,5 +1,5 @@
-import { FC, PropsWithChildren } from "react";
-import styles from "../assets/css/underConstructionLayout.module.css";
+import { FC, PropsWithChildren } from "react"
+import styles from "../assets/css/underConstructionLayout.module.css"
 
 const UnderConstructionLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const UnderConstructionLayout: FC<PropsWithChildren> = ({ children }) => {
       </div>
       <div className={styles.underConstructionLayout__content}>{children}</div>
     </div>
-  );
-};
+  )
+}
 
-export default UnderConstructionLayout;
+export default UnderConstructionLayout

@@ -1,16 +1,16 @@
-import { FC } from "react";
-import { Character } from "../types/Character";
+import { FC } from "react"
+import { Character } from "../types/Character"
 
-import styles from "../assets/css/characterCard.module.css";
+import styles from "../assets/css/characterCard.module.css"
 
 type CharacterCardProps = {
-  character: Character;
-};
+  character: Character
+}
 
 const CharacterCard: FC<CharacterCardProps> = ({
   character,
 }: CharacterCardProps) => {
-  return <div></div>;
-};
+  return <div></div>
+}
 
-export default CharacterCard;
+export default CharacterCard
