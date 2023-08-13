@@ -9,11 +9,13 @@ import { getUserCharacters } from "../api/userCharacters"
 import EmptyUserCharacters from "./EmptyUserCharacters"
 import LoadingError from "./LoadingError"
 import DotsLoading from "./DotsLoading"
+import { useNavigate } from "react-router-dom"
 
 const UserCharacters: FC = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [isError, setIsError] = useState(false)
   const [characters, setCharacters] = useRecoilState(userCharactersState)
+  const navigate = useNavigate()
 
   const loadCharacters = async () => {
     setIsError(false)
@@ -38,14 +40,14 @@ const UserCharacters: FC = () => {
   }, [])
 
   const handleNewButton = () => {
-    console.log("handled")
+    navigate("/creator")
   }
 
   return (
     <div className={styles.userCharacters}>
       <Button text="Новый персонаж" onClick={handleNewButton} />
       <div className={styles.userCharacters__list}>
-        {isLoading && <DotsLoading />}
+        {characters.length <= 0 && isLoading && <DotsLoading />}
 
         {isError && <LoadingError onRetry={loadCharacters} />}
 
