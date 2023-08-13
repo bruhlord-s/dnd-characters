@@ -7,9 +7,7 @@ type CharacterCardProps = {
   character: Character
 }
 
-const CharacterCard: FC<CharacterCardProps> = ({
-  character,
-}: CharacterCardProps) => {
+const CharacterCard: FC<CharacterCardProps> = ({ character }) => {
   return (
     <div className={styles.characterCard}>
       <div className={styles.characterCard__top}>

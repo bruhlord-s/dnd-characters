@@ -9,6 +9,8 @@
 :root {
   --bg-color: #111111;
   --text-color: #ffffff;
+  --error-color: #ff2525;
+  --bg-error-color: rgba(255, 1, 1, 0.1);
 
   --fs-large: 18px;
   --fs-small: 12px;

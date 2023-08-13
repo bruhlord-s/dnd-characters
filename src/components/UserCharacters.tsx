@@ -7,6 +7,7 @@ import { userCharactersState } from "../store/userCharacters"
 import CharacterCard from "./CharacterCard"
 import { getUserCharacters } from "../api/userCharacters"
 import EmptyUserCharacters from "./EmptyUserCharacters"
+import LoadingError from "./LoadingError"
 
 const UserCharacters: FC = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -40,9 +41,14 @@ const UserCharacters: FC = () => {
           <EmptyUserCharacters />
         )}
 
-        {characters.map((character, i) => (
-          <CharacterCard character={character} key={i} />
-        ))}
+        {characters.length <= 0 && !isLoading && isError && (
+          <LoadingError onRetry={loadCharacters} />
+        )}
+
+        {characters.length > 0 &&
+          characters.map((character, i) => (
+            <CharacterCard character={character} key={i} />
+          ))}
       </div>
     </div>
   )

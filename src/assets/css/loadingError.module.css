@@ -1,0 +1,26 @@
+.loadingError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 8px 16px;
+  height: 80px;
+
+  border: 1px solid var(--error-color);
+  border-radius: 8px;
+  background-color: var(--bg-error-color);
+
+  font-size: var(--fs-small);
+}
+
+.loadingError__retry {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loadingError__retryText {
+  padding: 1px;
+  border-bottom: 1px solid var(--text-color);
+}

@@ -7,7 +7,7 @@ type ButtonProps = {
   onClick: () => any
 }
 
-const Button: FC<ButtonProps> = ({ text, onClick }: ButtonProps) => {
+const Button: FC<ButtonProps> = ({ text, onClick }) => {
   return (
     <button className={styles.button} onClick={onClick}>
       {text}
