@@ -5,6 +5,8 @@
   flex-direction: column;
 
   gap: 32px;
+
+  height: 100%;
 }
 
 .userCharacters__list {
@@ -13,4 +15,6 @@
   gap: 20px;
 
   overflow-y: auto;
+
+  flex: 1;
 }
