@@ -1,0 +1,12 @@
+.emptyUserCharacters {
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fs-small);
+}
