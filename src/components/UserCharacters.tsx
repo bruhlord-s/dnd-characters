@@ -41,8 +41,6 @@ const UserCharacters: FC = () => {
     console.log("handled")
   }
 
-  // TODO: fix overflow-y, so title and button
-  //       will be fixed at the top
   return (
     <div className={styles.userCharacters}>
       <Button text="Новый персонаж" onClick={handleNewButton} />
